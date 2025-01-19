@@ -1,0 +1,15 @@
+[workspace]
+members = ["crates/bootloader", "crates/applications"]
+resolver = "2"
+
+[patch.crates-io]
+embassy-boot = { git = "https://github.com/embassy-rs/embassy", branch = "main" }
+embassy-boot-stm32 = { git = "https://github.com/embassy-rs/embassy",  branch = "main"}
+embassy-embedded-hal = { git = "https://github.com/embassy-rs/embassy", branch = "main"}
+embassy-executor = { git = "https://github.com/embassy-rs/embassy", branch = "main"}
+embassy-futures = { git = "https://github.com/embassy-rs/embassy", branch = "main"}
+embassy-stm32 = { git = "https://github.com/embassy-rs/embassy", branch = "main"}
+embassy-sync = { git = "https://github.com/embassy-rs/embassy", branch = "main"}
+embassy-time = { git = "https://github.com/embassy-rs/embassy", branch = "main"}
+embassy-time-driver = { git = "https://github.com/embassy-rs/embassy", branch = "main" }
+
